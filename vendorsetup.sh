@@ -27,7 +27,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
     export LC_ALL="C"
   
 # Maintaining Info
-    export OF_MAINTAINER="OMNIUM"
+    export OF_MAINTAINER="Nero & Stephen"
     export FOX_BUILD_TYPE=Unofficial
   	
 # Device Info
