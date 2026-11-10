@@ -134,6 +134,8 @@ TW_EXCLUDE_DEFAULT_USB_INIT := true
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.0/lun.%d/file
 TW_SUPPORT_INPUT_AIDL_HAPTICS := false
 TW_BATTERY_SYSFS_WAIT_SECONDS := 6
+# no health HAL in recovery: read the level and status from /sys/class/power_supply/battery
+TW_USE_LEGACY_BATTERY_SERVICES := true
 
 # Debug flags
 TWRP_INCLUDE_LOGCAT := true
