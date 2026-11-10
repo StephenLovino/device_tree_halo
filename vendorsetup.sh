@@ -28,7 +28,6 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
   
 # Maintaining Info
     export OF_MAINTAINER="OMNIUM"
-    export FOX_VERSION=$(date +%y.%m.%d)
     export FOX_BUILD_TYPE=Unofficial
   	
 # Device Info
