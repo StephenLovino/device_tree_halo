@@ -51,7 +51,8 @@ BOARD_BOOTIMG_HEADER_VERSION := 4
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_RAMDISK_USE_LZ4 := true
-BOARD_EXCLUDE_KERNEL_FROM_RECOVERY_IMAGE := true
+# The recovery carries its own kernel (prebuilt/kernel) with matching modules in recovery/root/lib/modules,
+# so it boots whatever kernel the installed ROM has.
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 
 # Partitions
